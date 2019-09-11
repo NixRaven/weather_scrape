@@ -98,8 +98,8 @@ def main():
 	# set urls for sites and pathnames for files
 	PARIS_URL = 'https://www.timeanddate.com/weather/france/paris'
 	PDX_URL = 'https://www.timeanddate.com/weather/usa/portland-or'
-	PDX_PATH = os.path.realpath('.') + '/dat/pdx_weather.json'
-	PARIS_PATH = os.path.realpath('.') + '/dat/paris_weather.json'
+	PDX_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + '/dat/pdx_weather.json'
+	PARIS_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + '/dat/paris_weather.json'
 
 	# set variables for paris and portland
 	pdx_weather = get_stats(PDX_URL, 0)

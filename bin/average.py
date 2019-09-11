@@ -119,8 +119,8 @@ def readable_out(data, city, good=True, full=True):
 
 # main function
 def main():
-	PDX_PATH = os.path.realpath('.') + '/dat/pdx_weather.json'
-	PARIS_PATH = os.path.realpath('.') + '/dat/paris_weather.json'
+	PDX_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + '/dat/pdx_weather.json'
+	PARIS_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + '/dat/paris_weather.json'
 
 	# create lists of all the data from our weather files
 	try:
